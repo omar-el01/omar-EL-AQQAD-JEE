@@ -1,8 +1,11 @@
 package Metier;
 
 import Dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class MetierImpl2 implements IMetier{
+
 
     IDao dao;
 
