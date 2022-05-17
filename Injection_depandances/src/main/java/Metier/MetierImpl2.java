@@ -15,7 +15,8 @@ public class MetierImpl2 implements IMetier{
 
     @Override
     public double calculate() {
-        return 0;
+
+        return dao.getData() * Math.random();
     }
     public void setDao(IDao dao) {
         this.dao = dao;
