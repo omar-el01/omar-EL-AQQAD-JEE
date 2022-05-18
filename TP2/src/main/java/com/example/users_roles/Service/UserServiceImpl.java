@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserService{
     UserRepository userRepository;
     @Autowired
     RoleRepository roleRepository;
-
     @Override
     public User addNewUser(User user) {
         if (user == null) return null;
@@ -32,7 +31,6 @@ public class UserServiceImpl implements UserService{
 
         return  userRepository.save(user);
     }
-
     @Override
     public Role addNewRole(Role role) {
         return roleRepository.save(role);
